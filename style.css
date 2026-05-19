@@ -217,14 +217,15 @@ span {
     padding: 0 4rem;
 }
 .about-content h2{
+    font-size: 10rem;
   text-align: left;
   line-height: 1.2;
 }
 .about-content h3{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 3rem;
     margin: 2rem 0 3rem;
 }
 .services h2{
@@ -264,18 +265,35 @@ span {
 }
 .career {
     background: var(--bg-color);
+
 }
- 
+
+
+.career .heading {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: -100px;                                                                                                                                   
+}                                            
+
+
+
+
+.heading h2{
+font-size: 2rem;
+    
+}
+
+
 .career-subtitle {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.6rem;                                                          
     color: #555;
     margin-top: -2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem;                    
 }
  
 .timeline {
-    position: relative;
+    position: relative;                
     max-width: 75rem;
     margin: 0 auto;
     padding-left: 4rem;
