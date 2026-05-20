@@ -418,3 +418,55 @@ font-size: 2rem;
     background: var(--main-color);
     color: var(--bg-color);
 }
+
+@media (max-width: 768px) {
+
+  /* menu hambúrguer */
+  #menu-icon { display: block; }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--main-color);
+    flex-direction: column;
+    padding: 2rem;
+    display: none; /* JS toggle: add class "active" */
+  }
+  .navbar.active { display: flex; }
+  .navbar a { margin: 1rem 0; }
+
+  /* seção home: empilha foto em cima do texto */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 12rem;
+    gap: 2rem;
+  }
+  .home-img, .home-img img {
+    width: 60vw;
+    max-width: 22rem;
+  }
+  .home-content h3 { font-size: 3rem; }
+  .home-content h1 { font-size: 3.2rem; }
+  .home-content p  { font-size: 1.8rem; }
+  .home-content h3:nth-of-type(2) { white-space: normal; height: auto; }
+  .social-media    { justify-content: center; }
+
+  /* seção about: empilha */
+  .about { flex-direction: column-reverse; }
+  .about-img img { width: 60vw; max-width: 22rem; }
+  .about-content h2 { font-size: 5rem; }
+  .about-content h3 { font-size: 2.5rem; }
+  .about-content p  { font-size: 1.8rem; }
+
+  /* heading da seção carreira */
+  .career .heading { font-size: 5rem; margin-top: 0; }
+
+  /* botões: não deixar ultrapassar a tela */
+  .btn { padding: 1.4rem 4rem; font-size: 1.7rem; }
+
+  /* padding geral das seções */
+  section { padding: 10rem 5% 2rem; }
+}
